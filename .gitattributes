@@ -1,0 +1,9 @@
+# 统一换行符：仓库里一律 LF，检出时也不做转换。
+# 理由：本仓库只有文本文件（js / md），统一 LF 可以避免
+# Windows 与 Linux 用户之间产生「整文件都变了」的假 diff。
+* text=auto eol=lf
+
+# 二进制文件不要被当文本处理
+*.png binary
+*.jpg binary
+*.ico binary

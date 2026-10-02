@@ -1,0 +1,41 @@
+# 绝不提交：真机浏览器 profile
+#
+# ⚠️⚠️ 这是本仓库最重要的一节。
+# `browser-demo/profile/` 是 Edge 的**独立 profile**，里面有：
+#   · IndexedDB（实测含 midjourney.com / docs.qq.com 的账号数据）
+#   · Cookie 与登录态
+#   · `Local Extension Settings/<篡改猴扩展 ID>/` —— 用户脚本的 GM_setValue 数据
+#     （**API Key 就存在这里**）
+# 一旦推上去，等于把账号和密钥公开。1.4 GB，且不可撤回。
+profile/
+profile-noext/
+**/profile/
+**/profile-noext/
+Local Extension Settings/
+IndexedDB/
+Cookies
+Login Data
+
+# 真机页面留档 —— 含**真实同学姓名 / 学校 / 本人账号名**
+_pages/
+
+# 日志与回归输出（可能含 URL、账号、密钥片段）
+*.log
+回归输出/
+logs/
+
+# 一次性脚本 / 变异体 / 备份 / 归档
+# （这些是本机开发过程的产物，不该进仓库）
+patch-*.py
+mut-*.mjs
+_mut/
+*.bak
+*.bak-*
+*.old
+归档-*/
+备份-*/
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
