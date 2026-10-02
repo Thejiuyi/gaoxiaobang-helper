@@ -39,9 +39,13 @@
 
 ## 安装
 
-1. 浏览器安装 **Tampermonkey**（篡改猴）扩展。
-2. 打开 [`userscript/5-高校邦助手-全能合并版-v1.0.1.user.js`](userscript/5-高校邦助手-全能合并版-v1.0.1.user.js)，
-   点 **Raw**，Tampermonkey 会弹出安装页 → 安装。
+1. 浏览器先装 **Tampermonkey**（篡改猴）扩展。
+2. **点这一行直接安装**（Tampermonkey 会自动弹出安装页）：
+
+   ### 👉 [安装 高校邦助手 v1.0.1](https://raw.githubusercontent.com/Thejiuyi/gaoxiaobang-helper/main/userscript/5-高校邦助手-全能合并版-v1.0.1.user.js)
+
+   没弹窗 = 第 1 步的 Tampermonkey 没装好。
+   手动方式：打开 [`userscript/`](userscript) 目录 → 点开 `.user.js` 文件 → 点右上角 **Raw**。
 3. 打开高校邦课程页面，网页**顶部中间**会出现一条蓝色面板。
 
 > ⚠️ **只装一份。** 如果你之前装过旧版（尤其是 `@namespace` 不是
